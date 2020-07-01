@@ -1,19 +1,5 @@
-date=window.prompt("Enter a date")
-var d=new Date();
-d.setDate(date);
-document.getElementById("h1").innerHTML=d;
-document.write("Also check the console for the date");
-document.write("<br>");
-console.log(d);
-document.write("<br>");
-document.write("Today's date is :");
-document.write(Date());
-document.write("<br>");
-function display()
-{
-	document.write(Date());
-	alert("Thanks for clicking");
-}
+
+
 function html()
 {
 	document.getElementById("h1").innerHTML=document.write("<h1>Introduction to HTML</h1>");
@@ -31,115 +17,8 @@ function js()
 	document.getElementById("p").innerHTML=document.write("<i>JavaScript is a very powerful client-side scripting language. JavaScript is used mainly for enhancing the interaction of a user with the webpage. In other words, you can make your webpage more lively and interactive, with the help of JavaScript. JavaScript is also being used widely in game development and Mobile application development.Modern JavaScript is a “safe” programming language. It does not provide low-level access to memory or CPU, because it was initially created for browsers which do not require it.JavaScript’s capabilities greatly depend on the environment it’s running in. For instance, Node.js supports functions that allow JavaScript to read/write arbitrary files, perform network requests, etc.In-browser JavaScript can do everything related to webpage manipulation, interaction with the user, and the webserver.</i>");
 
 }
-function formfun()
-{
-	fname=document.forms[0].elements[0].value
-	if(fname!="")
-	{
-	alert("Hello"+" "+fname+" "+"Welcome to Conduira!!!");
-}
-else
-alert("Please enter a name");
-}
-function controlflow()
-{
-	
 
-	try
-	{
-		n=window.prompt("Enter value of n");
-		
-		if(n>=101 && n<=105)
-		{
-			throw "Value cannot be calculated";
-		}
-	
-	
-	switch (Math.round(n/10))
-	{
-		case 1: if(n1==10)
-		        document.write("<h2>Element is found in the range 10-100</h2>");
-		        break;
-		case 2: if(n>=11 && n<=20)
-		        document.write("<h2>Element is found in the range 11-20</h2>");
-		        break;
-		case 3: if(n>=21 && n<=30)
-		        document.write("<h2>Element is found in the range 21-30</h2>");
-		        break;
-		case 4: if(n>=31 && n<=40)
-		        document.write("<h2>Element is found in the range 31-40</h2>");
-		        break;
-		 case 5: if(n>=41 && n<=50)
-		        document.write("<h2>Element is found in the range 41-50</h2>");
-		        break;
-		 case 6: if(n>=51 && n<=60)
-		        document.write("<h2>Element is found in the range 51-60</h2>");
-		        break;
-		 case 7: if(n>=61 && n<=70)
-		        document.write("<h2>Element is found in the range 61-70</h2>");
-		        break;
-		 case 8: if(n>=71 && n<=80)
-		        document.write("<h2>Element is found in the range 71-80</h2>");
-		        break;
-		 case 9: if(n>=81 && n<=90)
-		        document.write("<h2>Element is found in the range 81-90</h2>");
-		        break;
-		 case 10: if(n>=91 && n<=100)
-		        document.write("<h2>Element is found in the range 91-100</h2>");
-		        break;
-		default:
-		           document.write("OOPSS!!Cannot Find the Number between 10-100");
-	}
 
-}
-catch(err)
-{
-	console.log(err);
-}
-
-finally
-{
-	console.log("Switch case example");
-}
-}
-
-function fib()
-{
-	n=window.prompt("Enter Range");
-	x=0;
-	y=1;
-document.write("Fibanocci series is:");
-	document.write("<br>");
-	document.write(x);
-	document.write("<br>");
-	document.write(y);
-	document.write("<br>");
-	for(i=2;i<n;i++)
-	{
-	
-	
-	  z=x+y;
-	document.write(z);
-	document.write("<br>");
-	x=y;
-	y=z;
-	}
-	
-	
-}
-function split()
-{
-
-var a=[]
-var txt=String(document.getElementById("p1").innerHTML);
-
-a=txt.split(" ");
-
-document.write("<h1>5th word is:"+a[4]);
-document.write("<h1>7th word is:"+a[6]);
-document.write("<h1>10th word is:"+a[9]);
-
-}
 
 
 
